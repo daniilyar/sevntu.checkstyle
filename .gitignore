@@ -17,3 +17,8 @@ gh-pages/
 
 # No magic files used by the OS
 .DS_Store
+
+# No Maven Release plugin files
+pom.xml.releaseBackup
+pom.xml.tag
+release.properties

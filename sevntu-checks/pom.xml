@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
+  <!-- This parent pom is used for making releases to Maven Central -->
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>9</version>
+  </parent>
+
   <groupId>com.github.sevntu.checkstyle</groupId>
   <artifactId>sevntu-checks</artifactId>
-  <version>1.20.0</version>
+  <version>1.20.0-SNAPSHOT</version>
   <properties>
     <project.build.sourceEncoding>iso-8859-1</project.build.sourceEncoding>
     <checkstyle.version>6.17</checkstyle.version>
-    <!-- this version has to be the same as eclispe-cs depends on -->
+    <!-- this version has to be the same as eclipse-cs depends on -->
     <checkstyle.eclipse-cs.version>6.16.1</checkstyle.eclipse-cs.version>
     <checkstyle.plugin.version>2.17</checkstyle.plugin.version>
     <sevntu.maven.plugin>RELEASE</sevntu.maven.plugin>
@@ -229,4 +237,5 @@
       <url>http://sevntu-checkstyle.github.io/sevntu.checkstyle/maven2</url>
     </pluginRepository>
   </pluginRepositories>
+
 </project>
